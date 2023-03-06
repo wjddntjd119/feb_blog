@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Yeon+Sung&display=swap');
+
+body {
+  background-color: #c0defe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nanum pen Script";
+  min-height: 100vh;
+  margin: 0px;
+}
+
+@media (min-width: 650px) {
+  .App{
+    width: 640px;
+  }
+}
+
+@media (max-width: 650px) {
+  .App{
+    width: 90vw;
+  }
+}
+
+#root {
+  background-color: #f7fbff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.App {
+  min-height: 100vh;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* MyButton */
+
+.MyButton {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  font-size: 18px;
+
+  white-space: nowrap;
+  font-family: "Nanum pen Script";
+}
+
+.MyButton_default {
+  background-color: #ececec;
+  color: black;
+}
+
+.MyButton_positive {
+  background-color: #64c964;
+  color: white;
+}
+
+.MyButton_negative {
+  background-color: #fd565f;
+  color: white;
+}
+
+/* HEADER */
+
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+header > div {
+  display: flex;
+}
+
+header .head_text {
+  width: 50%;
+  font-size: 25px;
+  justify-content: center;
+}
+
+header .head_btn_left {
+  width: 25%;
+  justify-content: start;
+}
+
+header .head_btn_right {
+  width: 25%;
+  justify-content: end;
+}
+
+header button {
+  font-family: "Nanum pen Script";
+}
+
+/* BlogList */
+
+.BlogList .menu_wrapper {
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.BlogList .menu_wrapper .right_col {
+  flex-grow: 1;
+}
+
+.BlogList .menu_wrapper .right_col button {
+  width: 100%;
+}
+
+.BlogList .ControlMenu {
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ececec;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  cursor: pointer;
+  font-family: "Nanum Pen Script";
+  font-size: 18px;
+}
+
+/* BlogItem */
+
+.BlogItem {
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  border-bottom: 1px solid #e2e2e2;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.BlogItem .info_wrapper {
+  flex-grow: 1;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.BlogItem .blog_date {
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.BlogItem .blog_title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.BlogItem .blog_content_preview {
+  font-size: 18px;
+}
+
+.BlogItem .btn_wrapper {
+  min-width: 70px;
+}
+
+/* BlogEditor */
+
+.BlogEditor {
+
+}
+
+.BlogEditor section {
+  margin-bottom: 40px;
+}
+
+.BlogEditor h4 {
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.BlogEditor .input_date {
+  border: none;
+  border-radius: 5px;
+  background-color: #ececec;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  cursor: pointer;
+  font-family: "Nanum Pen Script";
+  font-size: 20px;
+}
+
+.BlogEditor .control_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.BlogEditor input, textarea {
+  font-family: "Nanum Pen Script";
+  font-size: 20px;
+
+  box-sizing: border-box;
+  width: 100%;
+  resize: vertical;
+
+  border: none;
+  border-radius: 5px;
+  background-color: #ececec;
+
+  padding: 20px;
+}
+
+.BlogEditor .title_input {
+  min-height: 50px;
+}
+
+.BlogEditor .content_area {
+  min-height: 200px;
+}
+
+.BlogEditor .control_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Blog */
+
+.BlogPage {
+}
+
+.BlogPage section {
+  width: 100%;
+  margin-bottom: 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.BlogPage h4 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.BlogPage .blog_content_wrapper {
+  width: 100%;
+  background-color: #ececec;
+  border-radius: 5px;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+.BlogPage .blog_content_wrapper p {
+  padding: 20px;
+  text-align: left;
+  font-size: 20px;
+  font-family: "Yeon Sung";
+  font-weight: 400;
+  line-height: 2.5;
+}
+
+/* header */
+
+.header-container {
+  position: relative;
+}
+
+.HeaderImg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.imgup {
+
+}
+
+.imgup .textup {
+  position: absolute;
+  bottom: 1.3%;
+  right: 28%;
+  transform: translate(50%, 50%);
+  color: #ececec;
+}
+
+.imgup .LogoutButton {
+  position: absolute;
+  bottom: 2.5%;
+  right: 4%;
+  transform: translate(50%, 50%);
+  transition: 0.3s;
+  margin: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #ececec;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  font-family: "Nanum Pen Script";
+  font-size: 18px;
+}
+
+.imgup .LogoutButton:hover {
+  background: transparent;
+  color: #ececec;
+  background-color: gray;
+  box-shadow: inset 54px 0 0 0 var(--btn-bg),
+    inset -54px 0 0 0 var(--btn-bg);
+}
+
+/* bottom */
+
+.bottom-container {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+
+  border-top: 2px solid #ececec;
+
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Login */
+
+.form-box {
+  padding-top: 1px;
+  padding-bottom: 200px;
+  padding-right: 30px;
+  padding-left: 30px;
+  background-color: #64c964;
+  border: none;
+  border-radius: 10px;
+}
+
+.form-input .text_Id, .text_Pw, .text_urName, .text_rePw{
+  font-family: "Nanum Pen Script";
+  font-size: 20px;
+
+  box-sizing: border-box;
+  width: 100%;
+  resize: vertical;
+
+  border: none;
+  border-radius: 5px;
+  background-color: #ececec;
+
+  padding: 20px;
+}
+
+.btn_Login {
+  position: relative;
+  bottom: 2.5%;
+  right: 7.9%;
+  transform: translate(50%, 50%);
+  transition: 0.3s;
+  margin: 1rem;
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  background-color: #ececec;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  font-family: "Nanum Pen Script";
+  font-size: 18px;
+}
+
+.btn_Login:hover {
+  background: transparent;
+  background-color: #008900;
+  border: 1px solid #ececec;
+  color: #e2e2e2;
+  box-shadow: inset 54px 0 0 0 var(--btn-bg),
+    inset -54px 0 0 0 var(--btn-bg);
+}
+
+.btn_register {
+  position: relative;
+  bottom: 2.5%;
+  right: -58%;
+  transform: translate(50%, 50%);
+  transition: 0.3s;
+  margin: 1rem;
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  background-color: #ececec;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  font-family: "Nanum Pen Script";
+  font-size: 18px;
+}
+
+.btn_register:hover {
+  background: transparent;
+  background-color: #008900;
+  border: 1px solid #ececec;
+  color: #e2e2e2;
+  box-shadow: inset 54px 0 0 0 var(--btn-bg),
+    inset -54px 0 0 0 var(--btn-bg);
+}
+
+.btn_singup {
+  position: relative;
+  bottom: 2.5%;
+  right: 10%;
+  transform: translate(50%, 50%);
+  transition: 0.3s;
+  margin: 1rem;
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  background-color: #ececec;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  font-family: "Nanum Pen Script";
+  font-size: 18px;
+}
+
+.btn_singup:hover {
+  background: transparent;
+  background-color: #008900;
+  border: 1px solid #ececec;
+  color: #e2e2e2;
+  box-shadow: inset 54px 0 0 0 var(--btn-bg),
+    inset -54px 0 0 0 var(--btn-bg);
+}
+
+.btn_login {
+  position: relative;
+  bottom: 2.5%;
+  right: -53.5%;
+  transform: translate(50%, 50%);
+  transition: 0.3s;
+  margin: 1rem;
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  background-color: #ececec;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  font-family: "Nanum Pen Script";
+  font-size: 18px;
+}
+
+.btn_login:hover {
+  background: transparent;
+  background-color: #008900;
+  border: 1px solid #ececec;
+  color: #e2e2e2;
+  box-shadow: inset 54px 0 0 0 var(--btn-bg),
+    inset -54px 0 0 0 var(--btn-bg);
+}
